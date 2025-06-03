@@ -1,0 +1,125 @@
+.UserMenu{
+    display: flex;
+    gap: 20px;
+    .UserMenu__list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        div.Icon-Bg{
+            height: 40px;
+            width: 40px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .Icon-Bg{
+            background-color: rgb(0, 89, 255);
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            svg{
+                color: white;
+                height: 25px;
+                width: 25px;
+            }
+        }
+
+        .Icon-Bg:hover{
+            background-color:  rgb(0, 71, 204);
+        }
+
+        .Profile{
+            position: relative;
+            cursor: pointer;            
+            img{
+                height: 40px;
+                width: 40px;
+                border-radius: 100px;
+            }
+            .DropdownMenu{
+                display: none;
+                .Dropdown{
+                    width: 300px;
+                    height: fit-content;
+                    background-color: rgb(41, 41, 41);
+                    color: white;
+
+                    position: absolute;
+                    top: 100%;
+                    right: 15px;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 2px;
+                    border-radius: 9px;
+                    padding: 10px;
+                    
+                    a{
+                        color: white;
+                        width: 100%;
+                        padding: 10px;
+                        border-radius: 4px;
+                        display: flex;
+                        gap: 8px;
+                        align-items: center;
+                        font-size: 18px;
+
+                    }
+                    a:hover{
+                        background-color: rgb(80, 80, 80);
+                    }
+
+                    a:last-child{
+                        background-color: red;
+                        color: white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    a:last-child:hover{
+                        background-color: rgb(45, 45, 45);
+                    }
+
+                }
+            }
+        }
+
+        .Profile:hover{
+            .DropdownMenu{
+                display: block;
+            }
+        }
+    }
+}
+
+
+/*---------------------- MOBILE VERSION----------------------*/
+@media screen and (max-width: 768px){
+    .UserMenu{
+        .UserMenu__list{
+            display: none;
+        }
+    }
+
+}
+
+
+/* ----------- TABLET DEVICES----------- */
+@media only screen and (max-width: 768px ) and (max-width:1023px){
+
+}
+
+/* ----------- LAPTOP DEVICES----------- */
+@media only screen and (max-width: 1024px ) and (max-width:1439px){
+
+}
+
+/* ----------- DESCKTOP DEVICES----------- */
+@media only screen and(max-width: 1440px ){
+
+}

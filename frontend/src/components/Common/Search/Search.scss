@@ -1,0 +1,83 @@
+.Search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    select , input , 
+    .Search-btn{
+        height: 40px;
+        border: none;
+        outline: none;
+    }
+    select{
+        background-color: rgb(0, 136, 255);
+        color: white;
+        border-radius: 5px 0 0 5px;
+        padding: 0 10px;
+    }
+
+    select:hover{
+        cursor: pointer;
+    }
+    
+    input{
+        width: 500px;
+        padding-left: 5px;
+    }
+
+    .Search-btn{
+        background-color: rgb(0, 136, 255);
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        transition: all 0.3s linear;
+
+        svg{
+            height: 25px;
+            width: 25px;
+            color: white;
+        }
+        
+    }
+    .Search-btn:hover{
+        background-color: rgb(0, 94, 177);
+    }
+    .Search-btn:active{
+        background-color: rgb(0, 136, 255);
+    }
+    
+}
+
+
+/*---------------------- MOBILE VERSION----------------------*/
+@media screen and (max-width: 768px){
+    .Search{
+        display: none;
+    }
+}
+
+
+/* ----------- TABLET DEVICES----------- */
+@media only screen and (max-width: 768px ) and (max-width:1023px){
+    .Search{
+        display: none;
+    }
+}
+
+/* ----------- LAPTOP DEVICES----------- */
+@media only screen and (max-width: 1024px ) and (max-width:1439px){
+    .Search{
+        display: none;
+    }
+}
+
+/* ----------- DESCKTOP DEVICES----------- */
+@media only screen and(max-width: 1440px ){
+    
+}
+
+
+

@@ -1,0 +1,355 @@
+.ProductDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    hr{
+        background-color: black;
+    }
+
+    sub{
+        color: gold;
+        font-size: 10px;
+    }
+
+    button{
+        padding: 10px;
+    }
+
+    .Product-Name-Options__container{
+        background-color: rgb(251, 255, 251);
+        width: 80%;
+
+        hr{
+            background-color: rgb(135, 133, 133);
+        }
+        .Product-Name__container,
+        .Product-Options__container{
+            color: white;
+            display: flex;
+            gap: 8px;
+            padding: 0 50px;
+
+            .active{
+                color: white;
+                background-color: rgb(3, 78, 112);
+            }
+        }
+        .Product-Name__container{
+            h1{
+                color: black;
+            }
+        }
+        .Product-Options__container{
+            button{
+                background-color: white;
+                color: rgb(46, 92, 109);
+                border: 1px solid rgb(46, 92, 109);
+            }
+            button:hover{
+                background-color: black;
+                color: white;
+            }
+        }
+        
+    }
+
+    .Main-Product_display-info__container{
+        background-color: rgb(251, 255, 251);
+        width: 80%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        .right-side, .left-side{
+            width: 600px;
+            padding: 20px;
+        }
+        .right-side{
+            
+            .GenInfo{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            .Product-Price__container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 12px;
+        
+                .Product__Discounted-Price{
+                    color: red;
+                    font-size: 30px;
+                    .Quantity{
+                        font-size: 25px;
+                        color: black;
+                    }
+                    span{
+                        color: red;
+                        font-size: 30px;
+                    }
+                }
+            
+                .Product__Regular-Price{
+                    color: grey;
+                    font-size: 30px;
+                    span{
+                        color: grey;
+                        font-size: 30px;
+                    }
+                }
+                .Product__Discount-Percentage{
+                    height: fit-content;
+                    background-color: red;
+                    color: white;
+                    padding: 2px 10px;
+                }
+            }
+        
+            .Main-Reviews__container{
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                .Reviews-Icons__container svg{
+                    color: rgb(255, 208, 0);
+                }
+            }
+        
+        
+            .Color-Select__container{
+        
+                .Color-Select__container{
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    gap: 8px;
+                    .Option-Border{
+                        border: 2px solid rgb(80, 80, 80);
+                        padding: 2px;
+                        border-radius: 100px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+        
+                        .Option{
+                            background-color: red;
+                            border-radius: 100px;
+                            height: 10px;
+                            width: 10px;
+                        }
+                    }
+                }
+            }
+            .Product-Options_container{
+                display: flex;
+                align-items: center;
+                justify-content: start;
+            }
+            .Main-Size-Select__container{
+                .Size-Select__container{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;    
+                    select{
+                        width: 250px;
+                        height: 40px;
+                        outline: none;
+                        border: solid 1px rgb(133, 133, 133);
+                        border-radius: 4px;
+                    }
+                }
+            }
+
+            .Product-Options_container{
+                input{
+                    height: 40px;
+                    width: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        
+            .Product-Quantity-Btns__container{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+        
+                input,button{
+                    height: 40px;
+                    padding: 2px 0;
+                }
+                input{
+                    width: 80px;
+                    border-radius: 4px;
+                    outline: none;
+                    border: 1px solid grey;
+                }
+        
+                .Product__Btns{
+                    display: flex;
+                    gap: 8px;
+                    button{
+                        width: 180px;
+                    }
+        
+                    .AddToCart__btn{
+                        background-color: rgb(3, 78, 112);
+                        color: white;
+                        border: 1px solid rgb(3, 78, 112);
+                    }
+                    .Favoutite__btn{
+                        background-color: white;
+                        color: rgb(3, 78, 112);
+                        border: 1px solid rgb(3, 78, 112);
+                    }
+            
+                    button:hover{
+                        background-color: black;
+                        color: white;
+                        border: 1px solid black;
+                    }
+                }   
+            }
+        
+            .Product-read-more__container{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+        
+                .relative__container{
+                    cursor: pointer;
+                    .Read-More__bar{
+                        h1{
+                            font-size: 25px
+                        };
+        
+                        button{
+                            background-color: transparent;
+                            color: black;
+                            font-size: 40px;
+                        }
+                    }
+                }   
+            }
+        
+            .Share__container{
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                span{
+                    font-size: 30px;
+                }
+                .Share-Social-Media__container{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    svg{
+                        cursor: pointer;
+                        height: 30px;
+                        width: 30px;
+                        transition: all 0.3s ease-in;
+                    }
+                    svg:hover{
+                        color: gold;
+                    }
+                }
+            }
+        
+            .Payment-Options__container{
+                display: flex;
+                gap: 8px;
+                img{
+                    cursor: pointer;
+                    height: 50px;
+                    width: 70px;
+                }
+            }
+        
+        }
+        
+        .left-side{
+            background-color: rgb(227, 222, 222);
+            height: 580px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            gap: 8px;
+        
+            img{
+                cursor: zoom-in;
+            }
+            .Main-Product-Image__container{
+                background-color: transparent;
+                width: 90%;
+                border-radius: 9px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 340px;
+                    transition: all 0.3s linear;
+                }
+                img:hover{
+                    transform: scale(1.1);
+                }
+            }
+        
+            .Secondary-Product-Image__conianer{
+                width: 90%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+        
+                img{
+                    height: 95px;
+                    width: 95px;
+                    box-shadow: 2px 2px 5px black;
+                }
+            }
+        }
+    }
+}
+
+
+.Product__Details{
+
+    ol{
+        li{
+            list-style: circle;
+
+        }
+    }
+    table{
+        width: 500px;
+        td,th{
+            border: solid 2px black;
+            text-align: center;
+            padding: 8px;
+        }
+        thead{
+            tr{
+                background-color: rgb(185, 185, 213);
+            }
+        }
+
+
+        tbody{
+            tr:nth-child(even){
+                background-color: rgb(255, 255, 255);
+                color: black;
+            }
+            tr:nth-child(odd){
+                background-color: rgb(133, 133, 133);
+                color: white;
+            }
+        }
+    }
+}

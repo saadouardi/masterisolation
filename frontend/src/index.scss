@@ -1,0 +1,579 @@
+/* Bebas Neue */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* Oswald */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+// Cabin Condensed //
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&display=swap');
+// Alata //
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+/* VARRIABLES */
+:root{
+    /*----------LIGHT MODE----------*/
+        /* BG COLOR */
+        --header-bgColor-lm: #00284c;
+        --body-bgColor-lm: linear-gradient(243deg, rgb(250, 250, 250) 0%, rgba(246,246,246,1) 51%, rgb(104, 104, 104) 100%);
+        --main-bgColor-lm: linear-gradient(243deg, rgb(17, 87, 193) 0%, rgb(15, 111, 255) 51%, rgb(47, 136, 220) 100%);
+        --footer-bgColor-lm: #0086ff;
+        --navbar-bgColor-lm:#0086ff;
+        --section-bgColor-lm:grey;
+        --classic-bgColor-lm:white;
+        /* COLOR */
+        --main-color-lm:#00284c;
+        --classic-color-lm:black;
+        --classic-link-color:blue;
+        --header-color-lm: white;
+        --footer-color-lm: white;
+    /*----------DARK MODE----------*/
+        /* BG COLOR */
+        --header-bgColor-dm: #0086ff;
+        --body-bgColor-dm: linear-gradient(243deg, rgba(5,44,126,1) 0%, rgba(11,68,193,1) 0%, rgba(12,23,53,1) 0%);
+        --footer-bgColor-dm: #0086ff;
+        /* COLOR */
+        --color-text-dm: white;
+    /* FONT */
+    // --font-primary: "Alata", sans-serif;
+    --font-primary: "Cabin Condensed", sans-serif;
+    // --font-primary: "Bebas Neue", sans-serif;
+    --font-secondary: "Oswald", sans-serif;
+}
+/* INITIALISATION */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primary);
+}
+header{
+    background-color: var(--header-bgColor-lm);
+    color: var(--header-color-lm);
+    height: fit-content;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    color:black;
+}
+main{
+    background-color: #004077;
+    color : var(--main-color-lm);
+    background-repeat: no-repeat;
+    padding: 0 0 20px 0;
+}
+section{
+    color: white;
+    background-color: var(--body-bgColor-dm);
+    height: fit-content;
+    width: 100%;
+    padding: 50px 0;
+}
+footer{
+    background-color: rgb(72, 155, 255);
+    height: fit-content;
+    width: 100%;
+}
+button{
+    background-color: black;
+    color: white;
+    width: fit-content;
+    height: 40px;
+    padding: 15px 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    transition: background-color 0.2s ease-out;
+}
+button:hover{
+    background-color: #65b7ff;
+    cursor: pointer;
+}
+button.Close-Btn{
+    background-color: red;
+    color: white;
+}
+input{
+    height: 30px;
+    width: 300px;
+}
+input[type='checkbox']{
+    height: 20px;
+    width: 20px;
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 7px;
+}
+a{
+    text-decoration: none;
+    width: fit-content;
+    color: white;
+    transition: all 0.2s linear;
+}
+a:hover{
+    color: rgb(98, 185, 255);
+}
+hr{
+    background-color: white;
+    height: 2px;
+    width: 100%;
+    border: none;
+}
+svg{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+svg.close{
+    color: red;
+}
+button.close{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    padding: 20px;
+    border-radius: 100px;
+}
+button.close:hover{
+    background-color: black;
+    padding: 20px;
+    border-radius: 100px;
+}
+.Loading{
+    background-color: #0088ff;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000000;
+    animation: Loading 2.5s infinite;
+    .Loading-Content{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .spinner{
+            height: 80px;
+            width: 80px;
+            border-top: 5px solid red;
+            border-bottom: 5px solid white;
+            border-right: 5px solid white;
+            border-left: 5px solid white;
+            border-radius: 100px;
+            animation: Spinner .6s linear infinite;
+        }
+    }
+}
+@keyframes Loading {
+    0%{
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    50%{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    100%{
+        display:none;
+    }
+}
+@keyframes Spinner {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.Authentication-Page{
+    background-color: black;
+}
+.flex__container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.space-between__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section__description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.section__title_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    height: fit-content;
+    width: 100%;
+    padding: 20px 0;
+}
+/* ABOUT US */
+.section__image{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 1200px;
+        height: 700px;
+        background-position: center;
+        background-size: cover;
+        border-radius: 24px;
+    }
+}
+/* MEET OUR TEAM */
+.team__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+/* ------------- STORE PAGE ------------- */
+.main-section{
+    background-image: url();
+    background-color: rgb(255, 128, 128);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.store__list{
+    background-color: cadetblue;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.item{
+    width: 200px;
+    height: fit-content;
+    background-color: #003f77;
+    box-shadow: 2px 2px 5px #00284c;
+    border-radius: 9px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 5px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    img{
+        width: 95%;
+        height: 70%;
+    }
+    h4{
+        color: white;
+    }
+}
+.item:hover{
+    background-color: #00559f;
+    border-radius: 16px;
+    cursor: pointer;
+    transform: scale(0.98);
+}
+.body__form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+    padding: 50px 0;
+    background-color: #00284c;
+}
+.form{
+    background-color: rgb(208, 208, 208);
+    height: fit-content;
+    width: 500px;
+    padding: 30px 30px 50px 30px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.LogIn__links_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.close_button__div{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding-bottom: 50px;
+    width: 100%;
+}
+.form__title{
+    padding-bottom: 20px;
+}
+.close_button{
+    color: red;
+    width: 30px;
+    height: 30px;
+}
+.close_button:hover{
+    color: black;
+    width: 30px;
+    height: 30px;
+}
+.form_inputs{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+sup{
+    font-size:15px;
+    color: red;
+    font-weight: bold;
+}
+.input__div{
+    width: 100%;
+    position: relative;
+
+}
+.input__icon{
+    position: absolute;
+    top: 55%;
+    left: 96%;
+}
+.input__div input{
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding-left: 5px;
+    border: 2px solid rgb(90, 89, 89);
+    border-radius: 4px;
+    outline: none;
+}
+.input__div input:hover{
+    background-color: rgb(241, 241, 241);
+}
+.input__div input[type="checkbox"]{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.input__div input[type="submit"]{
+    height: 50px;
+    width: calc(100% + 7.5px);
+    border: 2px solid black ;
+    background-color: black;
+    color: white;
+    transition: all 0.4s linear;
+}
+.input__div input[type="submit"]:hover{
+    border: 2px solid #65b7ff;
+    background-color: #65b7ff;
+    color: black;
+    cursor: pointer;
+}
+.form_inputs label {
+    color: rgb(36, 36, 36);
+    font-weight: bold;
+    font-size: 14px;
+}
+.checkbox__div{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+.social__container{
+    padding: 30px 0;
+}
+.continue__with::after,
+.continue__with::before{
+    content: " ------------------ ";
+}
+.social__media__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 0 30px 0;
+}
+.social__media_bg{
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s linear;
+}
+.social__media_bg:hover{
+    background-color: rgb(212, 212, 212);
+    cursor: pointer;
+    transform: translateY(-0.3rem);
+} 
+.social__media_bg .bi{
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+.facebook__bg{
+    background-color: rgb(0, 128, 255);
+}
+.facebook__bg:hover{
+    background-color: rgb(68, 161, 255);
+}
+.google__bg{
+    background-color:  #01a522;
+}
+.google__bg:hover{
+    background-color:  #00d12a;
+}
+.apple__bg{
+    background-color: black;
+}
+.apple__bg:hover{
+    background-color: rgb(56, 56, 56);
+}
+/* LIGHTBOX */
+.lightbox__overlay{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.lightbox{
+    width: 500px;
+    height: fit-content;
+    background-color: rgb(176, 176, 176);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+}
+.lightbox__closeBtn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.lightbox__side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.lightbox__inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.lightbox .closeBtn{
+    color: red;
+    height: 30px;
+    width: 30px;
+}
+.lightbox__inputs input{
+    height: 50px;
+    background-color: #00284c;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    /* padding-left: 10px; */
+}
+.lightbox__inputs input:hover{
+    background-color: #003f77;
+}
+/*----------------------------COVER SECTION----------------------------*/
+.cover-div{
+    background-image: url(./assets/images/design/banner/banner-2.jpg);
+    background-color: #f17f7f;
+    color: white;
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+/*----------- MOBILE DEVICES-----------*/
+@media only screen and (max-width: 767px){
+    .searchbar__div,
+    .icons__div ,
+    .MobileNavbar{
+        display: none;
+    }
+    .more__icon_div{
+        display: block;
+    }
+}
+/* ----------- TABLET DEVICES----------- */
+@media only screen and (max-width: 768px ) and (max-width:1023px){
+    .searchbar__div,
+    .icons__div ,
+    .header__horizantal-navbar__div{
+        display: none;
+    }
+
+    .more__icon_div{
+        display: block;
+    }
+}
+/* ----------- LAPTOP DEVICES----------- */
+@media only screen and (max-width: 1024px ) and (max-width:1439px){
+    .searchbar__div,
+    .icons__div ,
+    .header__horizantal-navbar__div{
+        display: none;
+    }
+    .more__icon_div{
+        display: block;
+    }
+}
+/* ----------- DESCKTOP DEVICES----------- */
+@media only screen and(max-width: 1440px ){
+}

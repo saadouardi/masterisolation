@@ -1,0 +1,141 @@
+.MainNavbar{
+    display: flex;
+    background-color: transparent;
+    height: 50px;
+    padding: 0;
+
+    .Icon-Bg{
+        border: 2px solid white;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        gap: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        svg{
+            height: 30px;
+            width: 30px;
+        }
+    }
+
+    .Icon-Bg:hover{
+        background-color: rgb(139, 139, 139);
+    }
+
+    
+    a{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        cursor: pointer;
+    }
+    a:hover,
+    a.active{
+        color: gold;
+        text-decoration: underline;
+        text-decoration-color: gold;
+    }
+}
+
+
+.MobileNavbar{
+    width: fit-content;
+    position: relative;
+    display: none !important;
+
+    svg{
+        background-color: transparent;
+        color: #ffffff;
+        border: 2px solid white;
+        height: 40px;
+        width: 40px;
+        border-radius: 8px;
+        transition: background-color 0.2s ease-in-out;
+    }
+    
+    svg:hover{
+        background-color: rgba(255, 255, 255, 0.715);
+        color: black;
+        cursor: pointer;
+    }
+
+    .menu__dropdown{
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index:1000;
+    
+        .menu__dropdown__content{
+            background:linear-gradient(243deg, rgba(5,44,126,1) 0%, rgba(11,68,193,1) 0%, rgba(12,23,53,1) 0%);
+            width: 90vw;
+            height: fit-content;
+            border-radius: 9px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 8px;
+    
+            a{
+                list-style: none;
+                width: 100%;
+                height: 50px;
+                background-color: rgb(88, 84, 84);
+                color: white;
+                padding: 10px 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                a{
+                    color: white;
+                }
+            }
+    
+            a:hover{
+                background-color: rgb(146, 146, 146);
+                cursor: pointer;
+            }
+        } 
+    }
+}
+
+.MobileNavbar:hover {
+    .menu__dropdown{
+        display: block;
+    }
+}
+
+
+/*---------------------- MOBILE VERSION----------------------*/
+@media screen and (max-width: 768px){
+    .MainNavbar{
+        display: none;
+    }
+    .MobileNavbar{
+        display: block !important;
+    }
+}
+
+
+/* ----------- TABLET DEVICES----------- */
+@media only screen and (max-width: 768px ) and (max-width:1023px){
+
+}
+
+/* ----------- LAPTOP DEVICES----------- */
+@media only screen and (max-width: 1024px ) and (max-width:1439px){
+
+}
+
+/* ----------- DESCKTOP DEVICES----------- */
+@media only screen and(max-width: 1440px ){
+
+}

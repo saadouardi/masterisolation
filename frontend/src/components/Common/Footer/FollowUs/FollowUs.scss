@@ -1,0 +1,28 @@
+.FollowUs{
+    background-color: #00284c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 20px;
+    .SocialMedia{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        a{
+    
+            img{
+                height: 50px;
+                width: 50px;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+            }
+            img:hover{
+                transform: translateY(-0.5rem);
+            }
+        }
+    }
+}

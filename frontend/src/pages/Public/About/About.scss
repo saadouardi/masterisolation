@@ -1,0 +1,36 @@
+.About__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .About-Img__container{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 500px;
+            height: 300px;
+        }
+    }
+
+    .About-Text__container{
+        width: 1000px;
+        text-align: center;
+        color: white;
+        padding: 20px;
+    
+        h6{
+            font-size: 25px;
+    
+        }
+    }
+
+
+}
+
+
+
+
+

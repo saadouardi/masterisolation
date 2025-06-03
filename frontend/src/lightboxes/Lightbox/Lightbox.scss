@@ -1,0 +1,44 @@
+.Lightbox{
+    width: 800px;
+    box-shadow: 2px 2px 20px rgb(255, 255, 255);
+    border-radius: 9px;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    z-index: 5000;
+    transform: translate(-50%,-50%);
+    .section-1,.section-2{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .section-1{
+        height: 30%;
+        background-color: rgb(6, 84, 201);
+        border-radius: 9px 9px 0 0;
+        .close-btn__container{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+            svg{
+                color: black;
+            }
+        }
+        img{
+            height: 100px;
+            width: 100px;
+        }
+    }
+
+    .section-2{
+        height: 70%;
+        background-color: whitesmoke;
+        border-radius: 0 0 9px 9px;
+    }
+}

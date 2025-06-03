@@ -1,0 +1,51 @@
+.QuickView__bg {
+    background-color: rgba(133, 133, 133, 0.639);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6000;
+}
+
+.QuickView {
+    background-color: white;
+    height: 500px;
+    width: 800px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6000;
+}
+
+
+.close-btn__container{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 5px;
+}
+.close-btn__container button{
+    background-color: red;
+    padding: 20px;
+}
+
+.QuickView .Product__Info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.Product__Info img{
+    height: 400px;
+    width: 300px;
+}
+
+.Product__Details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

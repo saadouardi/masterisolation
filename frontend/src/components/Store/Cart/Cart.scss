@@ -1,0 +1,126 @@
+.MainCart{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(224, 224, 224, 0.508);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+
+    hr{
+        background-color: black;
+    }
+
+    .Cart{
+        width: 400px;
+        height: 100%;
+        background-color: rgb(247, 247, 247);
+        display: flex;
+        flex-direction:column;
+        padding: 10px;
+        gap: 8px;
+        .NoItem__container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h1{
+                text-align: center;
+            }
+        }
+    }
+}
+
+.Products-Cart__list{
+    height: 70%;
+}
+.Cart-Title{
+    .Title__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
+
+
+.Product-Cart{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+}
+.Product-image-name__container{
+    display: flex;
+    gap: 8px;
+}
+
+
+.Value-Info__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .Delete__container{
+        svg{
+            color:red;
+        }
+    }
+}
+.Product-Value__container{
+    display: flex;
+}
+
+.Input-Value,.ValueX{
+    font-size: 20px;
+}
+.Input-Value, .Store-Currency, .Product-Price{
+    color: rgb(0, 162, 255);
+    
+}
+
+.Product-Value__container button,
+.Product-Value__container input{
+    border: .4px solid rgb(137, 137, 137);
+    background-color: rgb(233, 232, 232);
+    color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.Product-Value__container input{
+    width: 60px;
+}
+
+.MinusBtn{
+    border-radius: 9px 0 0 9px;
+}
+.PlusBtn{
+    border-radius: 0 9px 9px 0;
+}
+
+.Sub-Total__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Cart-Button__Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.Cart-Button__Container button{
+    background-color: rgb(1, 164, 214);
+    width: 350px;
+    height: 60px;
+}

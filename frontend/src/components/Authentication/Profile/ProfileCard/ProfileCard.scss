@@ -1,0 +1,29 @@
+.ProfileCard{
+    background-color: white;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    .ProfileCard-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+
+        .Image-Restrictions{
+            background-color: rgba(86, 190, 255, 0.681);
+            border: 1px solid black;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            p{
+                text-align: center;
+            }
+        }
+    }
+}

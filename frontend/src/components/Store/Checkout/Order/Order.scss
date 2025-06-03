@@ -1,0 +1,17 @@
+.Order{
+    width: 400px !important;
+    .Order__details{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        padding: 0 10px;
+        .Order__info{
+            display: flex;
+            gap: 8px;
+            .Order__name-qunatity{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

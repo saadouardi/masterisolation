@@ -1,0 +1,73 @@
+.ProfileEdit{
+    width: 650px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+    .Title__container{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    .section{
+        padding-left: 20px;
+        padding: 10px;
+    }
+    .section1{
+        background-color: rgb(217, 217, 217);
+        
+
+        ul{
+            display: flex;
+            gap: 10px;
+            padding: 0;
+            li{
+                color: rgb(91, 91, 91);
+                list-style: none;
+                cursor: pointer;
+            }
+            li:hover{
+                color: rgb(0, 98, 255);
+            }
+            li.active{
+                color: black;
+                text-decoration-color: rgb(0, 98, 255);
+                text-decoration-line: underline;
+            }   
+        }
+
+    }
+    .section2{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .Inputs__container{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 10px;
+            .Input__container{
+                display: flex;
+                flex-direction: column;
+                input{
+                    height: 40px;
+                    background-color: transparent;
+                    border: 2px solid rgb(173, 171, 171);
+                    border-radius: 4px;
+                    padding-left: 8px;
+                }
+                input:hover{
+                    border: 2px solid rgb(41, 101, 255);
+                }
+                input:focus{
+                    outline:2px solid rgb(41, 101, 255);
+                    border: none;
+                }
+            }
+        }
+    }
+}

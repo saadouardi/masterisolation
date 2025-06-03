@@ -1,0 +1,39 @@
+.services__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.service{
+    height: 250px;
+    width: 200px;
+    background-color: grey;
+    box-shadow: 2px 2px 6px rgba(255, 219, 219, 0.571);
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 5px;
+    gap: 10px;
+    transition: transform 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.service:hover{
+    transform: scale(0.8);
+    transform: translateY(-0.8rem);
+}
+
+.service img{
+    width: 90%;
+    height: 70%;
+}
+
+.service button{
+    width: 90%;
+    height: 20%;
+}

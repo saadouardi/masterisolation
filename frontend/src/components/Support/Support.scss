@@ -1,0 +1,62 @@
+.Support{
+    width: 350px;
+    height: fit-content;
+    background: linear-gradient(279deg, rgb(0, 110, 255) 25%, rgb(0, 162, 255) 100%);
+    color: black;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 5px;
+    cursor: pointer;
+    transition: all .3s linear;
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 9px;
+    }
+
+    .Agent__Info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        h3{
+            font-size: 20px
+        }
+    
+        .Agent__SocialMedia{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 10px;
+            a{
+                svg{
+                    color: white;
+                    transition: all 0.3s linear;
+                }
+            }
+            a:hover{
+                svg{
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
+
+.Support:hover{
+    background: linear-gradient(279deg, rgb(0, 85, 195) 25%, rgb(0, 162, 255) 100%);
+    box-shadow: .5px .5px 10px rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
