@@ -79,7 +79,7 @@ const AppContent = () => {
 
 function App() {
     return (
-        <Router>
+        <Router basename='/masterisolation'>
             <AppContent />
         </Router>
     );
