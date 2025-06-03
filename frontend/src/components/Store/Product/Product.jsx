@@ -8,10 +8,10 @@ export const Product = ({ProductImage, ProductName, ProductCurrency, ProductRegu
     const [showCart, setShowCart] = useState(false);
     const [SkeletonLoading,setSkeletonLoading] = useState(true);
     const handleProductDetails = (ProductName) => {
-        window.location.href = `/product?n=${ProductName}&c=${ProductCurrency}&rp=${ProductRegularPrice}&dp=${ProductDiscounterPrice}&src=${ProductImage}`;
+        window.location.href = `/masterisolation/product?n=${ProductName}&c=${ProductCurrency}&rp=${ProductRegularPrice}&dp=${ProductDiscounterPrice}&src=${ProductImage}`;
     }
     const handleWishlist = () =>{
-        document.location.href = `/wishlist?img=${ProductImage}&name=${ProductName}&regularprice=${ProductCurrency+ProductRegularPrice}&discountedprice=${ProductCurrency+ProductDiscounterPrice}`;
+        document.location.href = `/masterisolation/wishlist?img=${ProductImage}&name=${ProductName}&regularprice=${ProductCurrency+ProductRegularPrice}&discountedprice=${ProductCurrency+ProductDiscounterPrice}`;
     }
     const handleQuickView = (e) => {
         setShowQuickView((prevShowQuickView) => !prevShowQuickView);
