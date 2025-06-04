@@ -1,4 +1,4 @@
-.clients__list{
+.client-list {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,7 +6,8 @@
     flex-wrap: wrap;
     gap: 15px;
     padding: 15px 0;
-    img{
+
+    img {
         width: 120px;
         height: 120px;
         object-fit: cover;
@@ -16,7 +17,8 @@
         cursor: pointer;
         transition: all 0.3s ease-in-out;
     }
-    img:hover{
+
+    img:hover {
         transform: translateY(-.5rem);
     }
 }
