@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/masterisolation/static/css/main.6886c853.css",
-    "main.js": "/masterisolation/static/js/main.cb38ee45.js",
+    "main.js": "/masterisolation/static/js/main.703ce157.js",
     "static/js/453.d855a71b.chunk.js": "/masterisolation/static/js/453.d855a71b.chunk.js",
     "static/media/slider2.png": "/masterisolation/static/media/slider2.2b508918abdf61e919a7.png",
-    "static/media/Saad-Ouardi.jpg": "/masterisolation/static/media/Saad-Ouardi.91672a193c8682f5dc76.jpg",
     "static/media/logo-sbg.png": "/masterisolation/static/media/logo-sbg.47a186985deb96518294.png",
     "static/media/company.png": "/masterisolation/static/media/company.fc6e381835d8794af902.png",
+    "static/media/Saad-Ouardi.jpg": "/masterisolation/static/media/Saad-Ouardi.d3318bfd3f900c41dc70.jpg",
     "static/media/slider3.jpg": "/masterisolation/static/media/slider3.0152fbd3abc02bfcf479.jpg",
     "static/media/support.png": "/masterisolation/static/media/support.93971d72dca8035ab304.png",
     "static/media/promotion.webp": "/masterisolation/static/media/promotion.8e511c406d70359ce187.webp",
@@ -63,11 +63,11 @@
     "static/media/product-18.webp": "/masterisolation/static/media/product-18.f52aac363532088823bf.webp",
     "index.html": "/masterisolation/index.html",
     "main.6886c853.css.map": "/masterisolation/static/css/main.6886c853.css.map",
-    "main.cb38ee45.js.map": "/masterisolation/static/js/main.cb38ee45.js.map",
+    "main.703ce157.js.map": "/masterisolation/static/js/main.703ce157.js.map",
     "453.d855a71b.chunk.js.map": "/masterisolation/static/js/453.d855a71b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6886c853.css",
-    "static/js/main.cb38ee45.js"
+    "static/js/main.703ce157.js"
   ]
 }
