@@ -41,30 +41,30 @@ export const Home = () =>{
                         <Team 
                             Profile={Support1}
                             Name='Hassan OUARDI' 
-                            Job='CEO' 
-                            Description='Im the CEO' 
+                            Job='co-founder' 
+                            Description='leadership, and contribution to the company, while also highlighting their unique skills and experience' 
                             FacebookUrl='https://www.facebook.com/Psycho.Ouardi/' 
                             TwitterUrl='https://twitter.com/PSYCH0_JOKER' 
                             LinkedinUrl='https://www.linkedin.com/in/saad-ouardi-8399b824b/' 
-                            GithubUrl='https://github.com/SaadOuardi'>
+                            GithubUrl='https://github.com/saadouardi'>
                         </Team>
 
                         <Team 
                             Profile={Support2}
                             Name='Jamal JALOUTI' 
-                            Job='MANAGER' 
-                            Description='Im the Manager' 
+                            Job='The Chief Executive Officer (CEO)' 
+                            Description='the highest-ranking employee, responsible for overall leadership, strategic decisions, and the day-to-day operations of the company.'
                             FacebookUrl='https://www.facebook.com/Psycho.Ouardi/' 
                             TwitterUrl='https://twitter.com/PSYCH0_JOKER' 
                             LinkedinUrl='https://www.linkedin.com/in/saad-ouardi-8399b824b/' 
-                            GithubUrl='https://github.com/SaadOuardi'>
+                            GithubUrl='https://github.com/saadouardi'>
                         </Team>
 
                         <Team 
                             Profile={Support3}
                             Name='Saad Ouardi' 
-                            Job='Web Developer' 
-                            Description='Im the Website Developer' 
+                            Job='Software Developer' 
+                            Description='a professional who specializes in designing, coding, testing, and maintaining software applications and systems.' 
                             FacebookUrl='https://www.facebook.com/Psycho.Ouardi/' 
                             TwitterUrl='https://twitter.com/PSYCH0_JOKER' 
                             LinkedinUrl='https://www.linkedin.com/in/saad-ouardi-8399b824b/' 
@@ -74,9 +74,7 @@ export const Home = () =>{
 
                 </section>
             </main>
-
             <Footer/>
         </>
-        
     )
 }
