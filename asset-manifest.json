@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.2dcf092f.css",
-    "main.js": "./static/js/main.708255d1.js",
+    "main.js": "./static/js/main.a76076ce.js",
     "static/js/453.d855a71b.chunk.js": "./static/js/453.d855a71b.chunk.js",
     "static/media/slider2.png": "./static/media/slider2.2b508918abdf61e919a7.png",
     "static/media/logo-sbg.png": "./static/media/logo-sbg.47a186985deb96518294.png",
@@ -63,11 +63,11 @@
     "static/media/product-18.webp": "./static/media/product-18.f52aac363532088823bf.webp",
     "index.html": "./index.html",
     "main.2dcf092f.css.map": "./static/css/main.2dcf092f.css.map",
-    "main.708255d1.js.map": "./static/js/main.708255d1.js.map",
+    "main.a76076ce.js.map": "./static/js/main.a76076ce.js.map",
     "453.d855a71b.chunk.js.map": "./static/js/453.d855a71b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2dcf092f.css",
-    "static/js/main.708255d1.js"
+    "static/js/main.a76076ce.js"
   ]
 }
