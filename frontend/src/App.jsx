@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom';
 import { LoginPage } from './pages/Authentication/Login/Login';
 import { RegisterPage } from './pages/Authentication/Register/Register';
@@ -46,30 +46,30 @@ const AppContent = () => {
             {loading && <Loading />}
 
             <Switch>
-                {/*--------AUTHENTICATION--------*/}
+                {/*Authentication*/}
                 <Route path="/login" exact component={LoginPage} />
                 <Route path="/register" exact component={RegisterPage} />
                 <Route path="/resetpassword" exact component={ForgotPasswordPage} />
 
-                {/*--------MEMBER--------*/}
+                {/*Member routes*/}
                 <Route path="/profile" exact component={ProfilePage} />
 
-                {/*--------PUBLIC--------*/}
+                {/*Public routes*/}
                 <Route path="/" exact component={Home} />
                 <Route path="/blog" component={BlogPage} />
                 <Route path="/about" exact component={About} />
                 <Route path="/contact" exact component={Contact} />
 
-                {/*--------STORE--------*/}
+                {/*Store routes*/}
                 <Route path="/store" component={Store} />
                 <Route path="/product" component={ProductDetailsPage} />
                 <Route path="/wishlist" component={WishlistPage} />
                 <Route path="/checkout" component={CheckoutPage} />
 
-                {/*--------ADMIN--------*/}
+                {/*Admin routes*/}
                 <Route path='/dashboard' exact component={Dashboard} />
 
-                {/*--------ERROR--------*/}
+                {/*Error routes*/}
                 <Route component={Page404} />
             </Switch>
         </>
@@ -78,7 +78,7 @@ const AppContent = () => {
 
 function App() {
     return (
-        <Router basename='/masterisolation'>
+        <Router basename='/'>
             <AppContent />
         </Router>
     );
