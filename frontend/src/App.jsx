@@ -33,6 +33,14 @@ const AppContent = () => {
     const location = useLocation();
 
     useEffect(() => {
+        const redirectPath = sessionStorage.redirectPath;
+        if (redirectPath) {
+            sessionStorage.removeItem('redirectPath');
+            window.history.replaceState(null, '', redirectPath);
+        }
+    }, []);
+
+    useEffect(() => {
         setLoading(true);
         const timer = setTimeout(() => {
             setLoading(false)
