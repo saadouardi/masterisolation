@@ -1,4 +1,4 @@
-.Team{
+.team-card {
     background-color: rgb(0, 0, 0);
     width: 280px;
     height: fit-content;
@@ -11,32 +11,32 @@
     transition: transform 0.4s ease-in-out;
     cursor: pointer;
 
-    img{
+    img {
         width: 150px;
         height: 150px;
         border-radius: 100%;
     }
 
-    .SocialMedia__list{
+    .socialmedia-list {
         display: flex;
         gap: 15px;
         a{
-            svg{
+            svg {
                 color: white;
                 height: 30px;
                 width: 30px;
                 transition: all 0.3s linear;
             }
         }
-        a:hover{
-            svg{
+        a:hover {
+            svg {
                 color: #57abf5;
             }
         }
     }
 }
 
-.Team:hover{
+.team-card:hover {
     transform: translateY(-0.5rem);
 }
 

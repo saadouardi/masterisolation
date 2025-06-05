@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { UserMenu } from '../../UserMenu/UserMenu';
+import { UserDropdown } from '../../UserMenu/UserMenu';
 import { Search } from '../../Search/Search';
 import logo from '../../../../assets/images/logos/company.png';
 import './MainHeader.scss';
@@ -9,19 +9,21 @@ import './MainHeader.scss';
 export function MainHeader() {
     return (
         <>
-            <div className="MainHeader">
-                <div className='Header'>
+            <div className="main-header">
+                <div className='header-content'>
                     <Link to="/">
-                        <div className="Company">
-                            <img src={logo} alt="" className="Company-Logo"/>
-                            <span className="commpany__name" id="commpany__name">MASTER ISOLATION</span>
+                        <div className="company-container">
+                            <img 
+                                src={logo} 
+                                alt="master-isolation-logo" 
+                                className="company-logo"
+                            />
+                            <span className="commpany-name">MASTER ISOLATION</span>
                         </div>
                     </Link>
                     <Search/>
                 </div>
-
-
-                <UserMenu/>
+                <UserDropdown/>
             </div>
         </>
     )

@@ -7,13 +7,13 @@
         justify-content: center;
         gap: 5px;
 
-        div.Icon-Bg{
+        div.icon-bg{
             height: 40px;
             width: 40px;
             transition: all 0.3s ease-in-out;
         }
 
-        .Icon-Bg{
+        .icon-bg{
             background-color: rgb(0, 89, 255);
             border-radius: 100px;
             display: flex;
@@ -27,30 +27,30 @@
             }
         }
 
-        .Icon-Bg:hover{
+        .icon-bg:hover{
             background-color:  rgb(0, 71, 204);
         }
 
-        .Profile{
+        .user-dropdown {
             position: relative;
-            cursor: pointer;            
-            img{
+            cursor: pointer;
+
+            img.user-avatar {
                 height: 40px;
                 width: 40px;
                 border-radius: 100px;
             }
-            .DropdownMenu{
+            .dropdown-container {
                 display: none;
-                .Dropdown{
+
+                .dropdown-content {
                     width: 300px;
                     height: fit-content;
                     background-color: rgb(41, 41, 41);
                     color: white;
-
                     position: absolute;
                     top: 100%;
-                    right: 15px;
-                    
+                    right: 15px; 
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -59,7 +59,7 @@
                     border-radius: 9px;
                     padding: 10px;
                     
-                    a{
+                    a {
                         color: white;
                         width: 100%;
                         padding: 10px;
@@ -69,28 +69,37 @@
                         align-items: center;
                         font-size: 18px;
 
+                        img.user-avatar {
+                            height: 50px;
+                            width: 50px;
+                            border-radius: 100px;
+                        }
                     }
-                    a:hover{
+
+                    a:hover {
                         background-color: rgb(80, 80, 80);
                     }
 
-                    a:last-child{
+                    a:first-child {
+                        background-color: rgb(80, 80, 80);
+                    }
+
+                    a:last-child {
                         background-color: red;
                         color: white;
                         display: flex;
                         align-items: center;
                         justify-content: center;
                     }
-                    a:last-child:hover{
+                    a:last-child:hover {
                         background-color: rgb(45, 45, 45);
                     }
-
                 }
             }
         }
 
-        .Profile:hover{
-            .DropdownMenu{
+        .user-dropdown:hover {
+            .dropdown-container{
                 display: block;
             }
         }

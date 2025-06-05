@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title } from '../../../components/Common/Title';
+import { Title } from '../../components/Common/Title';
 import client1 from '../../assets/images/clients/aiguebelle.jpg';
 import client2 from '../../assets/images/clients/centrale.jpg';
 import client3 from '../../assets/images/clients/cocacola.png';

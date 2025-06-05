@@ -17,10 +17,10 @@ import { Dashboard } from './pages/Admin/Dashboard/Dashboard';
 import './App.css';
 
 const Loading = () => {
-    return(
+    return (
         <>
-            <div className="Loading">
-                <div className='Loading-Content'>
+            <div className="loading">
+                <div className='loading-content'>
                     <div className='spinner'></div>
                 </div>
             </div>
@@ -28,7 +28,6 @@ const Loading = () => {
     )
 }
 
-// Define a component that uses useLocation and performs loading logic
 const AppContent = () => {
     const [loading, setLoading] = useState(true);
     const location = useLocation();
@@ -37,14 +36,14 @@ const AppContent = () => {
         setLoading(true);
         const timer = setTimeout(() => {
             setLoading(false)
-        }, 2500);
+        }, 1200);
 
         return () => clearTimeout(timer)
     }, [location])
 
     return (
         <>
-            {/* {loading && <Loading />} */}
+            {loading && <Loading />}
 
             <Switch>
                 {/*--------AUTHENTICATION--------*/}

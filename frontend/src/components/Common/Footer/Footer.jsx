@@ -110,7 +110,7 @@ export const Footer = () => {
             
             {/* <!--COPYRIGHT--> */}
             <div className="copyright_div">
-                <p>Copyright  &copy; 2024 Master Isolation, Inc. All rights reserved.</p>
+                <p>Copyright  &copy;{new Date().getFullYear()} Master Isolation, Inc. All rights reserved.</p>
             </div>
 
         </footer>

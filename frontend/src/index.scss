@@ -6,8 +6,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&display=swap');
 // Alata //
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
 /* VARRIABLES */
-:root{
+:root {
     /*----------LIGHT MODE----------*/
         /* BG COLOR */
         --header-bgColor-lm: #00284c;
@@ -37,12 +38,18 @@
     --font-secondary: "Oswald", sans-serif;
 }
 /* INITIALISATION */
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: var(--font-primary);
 }
-header{
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+header {
     background-color: var(--header-bgColor-lm);
     color: var(--header-color-lm);
     height: fit-content;
@@ -51,29 +58,34 @@ header{
     top: 0;
     z-index: 1000;
 }
-body{
+
+body {
     background-color: rgb(255, 255, 255);
     color:black;
 }
-main{
+
+main {
     background-color: #004077;
     color : var(--main-color-lm);
     background-repeat: no-repeat;
     padding: 0 0 20px 0;
 }
-section{
+
+section {
     color: white;
     background-color: var(--body-bgColor-dm);
     height: fit-content;
     width: 100%;
     padding: 50px 0;
 }
-footer{
+
+footer {
     background-color: rgb(72, 155, 255);
     height: fit-content;
     width: 100%;
 }
-button{
+
+button {
     background-color: black;
     color: white;
     width: fit-content;
@@ -89,64 +101,77 @@ button{
     border: none;
     transition: background-color 0.2s ease-out;
 }
-button:hover{
+
+button:hover {
     background-color: #65b7ff;
     cursor: pointer;
 }
-button.Close-Btn{
+
+button.close-btn {
     background-color: red;
     color: white;
 }
-input{
+
+input {
     height: 30px;
     width: 300px;
 }
-input[type='checkbox']{
+
+input[type='checkbox'] {
     height: 20px;
     width: 20px;
 }
-img{
+
+img {
     width: 100px;
     height: 100px;
     border-radius: 7px;
 }
-a{
+
+a {
     text-decoration: none;
     width: fit-content;
     color: white;
     transition: all 0.2s linear;
 }
-a:hover{
+
+a:hover {
     color: rgb(98, 185, 255);
 }
-hr{
+
+hr {
     background-color: white;
     height: 2px;
     width: 100%;
     border: none;
 }
-svg{
+
+svg {
     height: 30px;
     width: 30px;
     cursor: pointer;
 }
-svg.close{
+
+svg.close {
     color: red;
 }
-button.close{
+
+button.close {
     height: 20px;
     width: 20px;
     background-color: red;
     padding: 20px;
     border-radius: 100px;
 }
-button.close:hover{
+
+button.close:hover {
     background-color: black;
     padding: 20px;
     border-radius: 100px;
 }
-.Loading{
-    background-color: #0088ff;
+
+.loading {
+    background-color: #000000a8;
     color: white;
     width: 100%;
     height: 100vh;
@@ -158,15 +183,17 @@ button.close:hover{
     left: 0;
     z-index: 5000000;
     animation: Loading 2.5s infinite;
-    .Loading-Content{
+    
+    .loading-content {
         padding: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
-        .spinner{
+        
+        .spinner {
             height: 80px;
             width: 80px;
-            border-top: 5px solid red;
+            border-top: 5px solid black;
             border-bottom: 5px solid white;
             border-right: 5px solid white;
             border-left: 5px solid white;
@@ -175,6 +202,7 @@ button.close:hover{
         }
     }
 }
+
 @keyframes Loading {
     0%{
         position: fixed;
@@ -191,34 +219,39 @@ button.close:hover{
         display:none;
     }
 }
+
 @keyframes Spinner {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+    100% {
         transform: rotate(360deg);
     }
 }
-.Authentication-Page{
+
+.authentication-page {
     background-color: black;
 }
-.flex__container{
+
+.flex-container {
     display: flex;
     align-items: center;
     gap: 8px;
 }
-.space-between__container{
+.space-between__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.section__description{
+
+.section__description {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-.section__title_div{
+
+.section__title_div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -227,14 +260,16 @@ button.close:hover{
     width: 100%;
     padding: 20px 0;
 }
+
 /* ABOUT US */
-.section__image{
+.section__image {
     width: 100%;
     height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
-    img{
+    
+    img {
         width: 1200px;
         height: 700px;
         background-position: center;
@@ -243,7 +278,7 @@ button.close:hover{
     }
 }
 /* MEET OUR TEAM */
-.team__container {
+.team-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -252,7 +287,7 @@ button.close:hover{
     gap: 20px;
 }
 /* ------------- STORE PAGE ------------- */
-.main-section{
+.main-section {
     background-image: url();
     background-color: rgb(255, 128, 128);
     width: 100%;
@@ -262,7 +297,8 @@ button.close:hover{
     justify-content: center;
     flex-direction: column;
 }
-.store__list{
+
+.store__list {
     background-color: cadetblue;
     width: 100%;
     height: fit-content;
@@ -273,7 +309,8 @@ button.close:hover{
     flex-wrap: wrap;
     gap: 20px;
 }
-.item{
+
+.item {
     width: 200px;
     height: fit-content;
     background-color: #003f77;
@@ -288,21 +325,24 @@ button.close:hover{
     gap: 5px;
     cursor: pointer;
     transition: all 0.2s linear;
-    img{
+
+    img {
         width: 95%;
         height: 70%;
     }
-    h4{
+
+    h4 {
         color: white;
     }
 }
-.item:hover{
+.item:hover {
     background-color: #00559f;
     border-radius: 16px;
     cursor: pointer;
     transform: scale(0.98);
 }
-.body__form{
+
+.body__form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -311,7 +351,8 @@ button.close:hover{
     padding: 50px 0;
     background-color: #00284c;
 }
-.form{
+
+.form {
     background-color: rgb(208, 208, 208);
     height: fit-content;
     width: 500px;
@@ -323,33 +364,39 @@ button.close:hover{
     flex-direction: column;
     flex-wrap: wrap;
 }
-.LogIn__links_container{
+
+.LogIn__links_container {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.close_button__div{
+
+.close_button__div {
     display: flex;
     align-items: end;
     justify-content: end;
     padding-bottom: 50px;
     width: 100%;
 }
-.form__title{
+
+.form__title {
     padding-bottom: 20px;
 }
-.close_button{
+
+.close_button {
     color: red;
     width: 30px;
     height: 30px;
 }
-.close_button:hover{
+
+.close_button:hover {
     color: black;
     width: 30px;
     height: 30px;
 }
-.form_inputs{
+
+.form_inputs {
     width: 100%;
     display: flex;
     align-items: start;
@@ -357,22 +404,25 @@ button.close:hover{
     flex-direction: column;
     gap: 15px;
 }
-sup{
+
+sup {
     font-size:15px;
     color: red;
     font-weight: bold;
 }
-.input__div{
+
+.input__div {
     width: 100%;
     position: relative;
-
 }
-.input__icon{
+
+.input__icon {
     position: absolute;
     top: 55%;
     left: 96%;
 }
-.input__div input{
+
+.input__div input {
     height: 40px;
     width: 100%;
     background-color: white;
@@ -382,15 +432,18 @@ sup{
     border-radius: 4px;
     outline: none;
 }
-.input__div input:hover{
+
+.input__div input:hover {
     background-color: rgb(241, 241, 241);
 }
-.input__div input[type="checkbox"]{
+
+.input__div input[type="checkbox"] {
     height: 20px;
     width: 20px;
     cursor: pointer;
 }
-.input__div input[type="submit"]{
+
+.input__div input[type="submit"] {
     height: 50px;
     width: calc(100% + 7.5px);
     border: 2px solid black ;
@@ -398,31 +451,37 @@ sup{
     color: white;
     transition: all 0.4s linear;
 }
-.input__div input[type="submit"]:hover{
+
+.input__div input[type="submit"]:hover {
     border: 2px solid #65b7ff;
     background-color: #65b7ff;
     color: black;
     cursor: pointer;
 }
+
 .form_inputs label {
     color: rgb(36, 36, 36);
     font-weight: bold;
     font-size: 14px;
 }
-.checkbox__div{
+
+.checkbox__div {
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 5px;
 }
-.social__container{
+
+.social__container {
     padding: 30px 0;
 }
+
 .continue__with::after,
-.continue__with::before{
+.continue__with::before {
     content: " ------------------ ";
 }
-.social__media__container{
+
+.social__media__container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -430,7 +489,8 @@ sup{
     gap: 10px;
     padding: 0 0 30px 0;
 }
-.social__media_bg{
+
+.social__media_bg {
     background-color: black;
     padding: 10px 20px;
     border-radius: 9px;
@@ -439,43 +499,53 @@ sup{
     justify-content: center;
     transition: transform 0.2s linear;
 }
-.social__media_bg:hover{
+
+.social__media_bg:hover {
     background-color: rgb(212, 212, 212);
     cursor: pointer;
     transform: translateY(-0.3rem);
-} 
-.social__media_bg .bi{
+}
+
+.social__media_bg .bi {
     color: white;
     width: 30px;
     height: 30px;
 }
-.facebook__bg{
+
+.facebook__bg {
     background-color: rgb(0, 128, 255);
 }
-.facebook__bg:hover{
+
+.facebook__bg:hover {
     background-color: rgb(68, 161, 255);
 }
-.google__bg{
+
+.google__bg {
     background-color:  #01a522;
 }
-.google__bg:hover{
+
+.google__bg:hover {
     background-color:  #00d12a;
 }
-.apple__bg{
+
+.apple__bg {
     background-color: black;
 }
-.apple__bg:hover{
+
+.apple__bg:hover {
     background-color: rgb(56, 56, 56);
 }
+
 /* LIGHTBOX */
-.lightbox__overlay{
+.lightbox__overlay {
     display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
-.lightbox{
+
+.lightbox {
     width: 500px;
     height: fit-content;
     background-color: rgb(176, 176, 176);
@@ -487,31 +557,36 @@ sup{
     flex-wrap: wrap;
     padding: 20px 20px;
 }
-.lightbox__closeBtn{
+
+.lightbox__closeBtn {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: end;
 }
-.lightbox__side{
+
+.lightbox__side {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
-.lightbox__inputs{
+
+.lightbox__inputs {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 10px;
 }
-.lightbox .closeBtn{
+
+.lightbox .closeBtn {
     color: red;
     height: 30px;
     width: 30px;
 }
-.lightbox__inputs input{
+
+.lightbox__inputs input {
     height: 50px;
     background-color: #00284c;
     color: white;
@@ -520,11 +595,13 @@ sup{
     border-radius: 4px;
     /* padding-left: 10px; */
 }
-.lightbox__inputs input:hover{
+
+.lightbox__inputs input:hover {
     background-color: #003f77;
 }
+
 /*----------------------------COVER SECTION----------------------------*/
-.cover-div{
+.cover-div {
     background-image: url(./assets/images/design/banner/banner-2.jpg);
     background-color: #f17f7f;
     color: white;
@@ -540,19 +617,21 @@ sup{
     flex-direction: column;
     text-align: center;
 }
+
 /*----------- MOBILE DEVICES-----------*/
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
     .searchbar__div,
     .icons__div ,
     .MobileNavbar{
         display: none;
     }
-    .more__icon_div{
+    .more__icon_div {
         display: block;
     }
 }
+
 /* ----------- TABLET DEVICES----------- */
-@media only screen and (max-width: 768px ) and (max-width:1023px){
+@media only screen and (max-width: 768px ) and (max-width:1023px) {
     .searchbar__div,
     .icons__div ,
     .header__horizantal-navbar__div{
@@ -563,8 +642,9 @@ sup{
         display: block;
     }
 }
+
 /* ----------- LAPTOP DEVICES----------- */
-@media only screen and (max-width: 1024px ) and (max-width:1439px){
+@media only screen and (max-width: 1024px ) and (max-width:1439px) {
     .searchbar__div,
     .icons__div ,
     .header__horizantal-navbar__div{
@@ -575,5 +655,5 @@ sup{
     }
 }
 /* ----------- DESCKTOP DEVICES----------- */
-@media only screen and(max-width: 1440px ){
+@media only screen and(max-width: 1440px ) {
 }

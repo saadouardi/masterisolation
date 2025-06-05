@@ -1,4 +1,4 @@
-.Main-Sidebar{
+.main-sidebar {
     height: 100%;
     width: 100%;
     background-color: rgba(70, 69, 69, 0.689);
@@ -8,34 +8,39 @@
     top: 0;
     left: 0;
     z-index: 10000;
-    .Sidebar{
+
+    .sidebar-content {
         height: 100%;
         width: 400px;
         background-color: rgb(29, 29, 29);
         color: white;
-        .Company__container{
+
+        .company-container {
             display: flex;
             align-items: center;
             justify-content: center;
-            a{
+            a {
                 text-decoration: none;
                 width: 100%;
                 padding: 50px;
-                .Company{
-                    img{
+                
+                .company-content {
+                    img {
                         height: 80px;
                         width: 80px;
                     }
-                    span{
+
+                    span {
                         font-size: 25px;
                     }
                 }
             }
-            a:hover{
+            a:hover {
                 color: white;
             }
         }
-        .Sidebar__Link{
+
+        .sidebar-link{
             width: 100%;
             height: 70%;
             display: flex;
@@ -43,7 +48,8 @@
             justify-content: start;
             flex-direction: column;
             gap:8px;
-            a{
+
+            a {
                 font-size: 20px;
                 text-decoration: none;
                 width: 95%;
@@ -54,22 +60,25 @@
                 border-radius: 9px;
                 background-color: rgba(128, 128, 128, 0.188);
             }
-            a:hover{
+            
+            a:hover {
                 color: white;
                 background-color: grey;
             }
-            a.active{
+
+            a.active {
                 background-color: rgb(0, 98, 255);
                 color: white;
             }
         }
-        .UserProfile{
+        .user-container {
             background-color: rgb(58, 58, 58);
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: start;
-            .Profile{
+
+            .user-profile {
                 position: relative;
                 padding: 8px;
                 display: flex;
@@ -78,22 +87,22 @@
                 gap: 8px;
                 cursor: pointer;
     
-                img{
+                img {
                     height: 40px;
                     width: 40px;
                 }
     
-                .row-up{
+                .row-up {
                     display: none;
                 }
 
-                .UserMenu{
+                .user-dropdown {
                     display: none;
                     position: absolute;
                     bottom: 100%;
                     left: 130px;
 
-                    .UserMenu__dropdown{
+                    .user-dropdown-content {
                         display: flex;
                         flex-direction: column;
                         background-color: rgb(209, 209, 209);
@@ -101,10 +110,12 @@
                         width: 200px;
                         border-radius: 9px;
                         padding-top: 10px;
-                        hr{
+
+                        hr {
                             background-color: black;
                         }
-                        a{
+
+                        a {
                             display: flex;
                             align-items: center;
                             justify-content: start;
@@ -114,32 +125,34 @@
                             padding: 2px 15px;
                         }
 
-                        a:hover{
+                        a:hover {
                             background-color: rgb(185, 185, 185);
                         }
 
-                        a:last-child{
+                        a:last-child {
                             padding: 10px;
                             background-color:red;
                             color: white;
                             border-radius:  0 0 9px 9px;
                             justify-content: center;
                         }
-                        a:last-child:hover{
+
+                        a:last-child:hover {
                             background-color:black;
                         }
                     }
                 }
             }
         }
-        .UserProfile:hover{
-            .row-down{
+        .user-profile:hover {
+            .row-down {
                 display: none;
             }
-            .row-up,.UserMenu{
+
+            .row-up,
+            .user-container {
                 display: block;
             }
-
         }
     }
 }

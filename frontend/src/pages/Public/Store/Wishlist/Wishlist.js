@@ -30,7 +30,7 @@ export const WishlistPage = ()=>{
         <>
             <Header/>
             <main>
-                <div class="cover-div about-cover">
+                <div className="cover-div about-cover">
                     <h1>#Wishlist</h1>
                     <h5>Know who are we , what we do and how we do</h5>
                 </div>

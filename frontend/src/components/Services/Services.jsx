@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title } from '../../../components/Common/Title';
+import { Title } from '../../components/Common/Title';
 import service1 from '../../assets/images/services/free-shipping.jpg';
 import service2 from '../../assets/images/services/happy-sell.webp';
 import service3 from '../../assets/images/services/online-order.jpg';
@@ -21,9 +21,9 @@ export const Services = () => {
     return (
         <section>
             <Title title='OUR SERVICES'></Title>
-            <div className="services__list">
+            <div className="service-list">
                 {services.map((service, index) => (
-                    <div className="service" key={index}>
+                    <div className="service-card" key={index}>
                         <img src={service.src} alt={service.alt} />
                         <button>CHECK NOW</button>
                     </div>

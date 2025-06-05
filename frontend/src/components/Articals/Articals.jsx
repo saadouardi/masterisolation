@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title } from '../../../components/Common/Title';
+import { Title } from '../../components/Common/Title';
 import './Artical.scss';
 
 export const Articals = () => {

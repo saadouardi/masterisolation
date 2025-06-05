@@ -1,4 +1,4 @@
-.HeaderSection{
+.header-section {
     background-color: rgb(47, 44, 50);
     width: 100%;
     display: flex;
@@ -6,13 +6,13 @@
     justify-content: space-between;
     padding: 0;
 
-    .side-2{
+    .side-2 {
         display: flex;
         gap: 8px;
         align-items: center;
     }
 
-    .contact-info__div{
+    .contact-info__div {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -21,7 +21,7 @@
             color: white;
             font-size: 12px;
 
-            .contact__div{
+            .contact__div {
                 background-color: rgb(75, 71, 78);
                 height: 50px;
                 width: fit-content;
@@ -30,11 +30,13 @@
                 justify-content: center;
                 padding: 0 20px;
                 transition: all 0.3s ease-in-out;
-                svg{
+
+                svg {
                     height: 20px;
                     width: 20px;
                 }
-                span{
+
+                span {
                     font-size: 12px;
                     width: fit-content;
                     display: flex;
@@ -44,10 +46,11 @@
                 }
             }
             
-            .email-contact{
+            .email-contact {
                 background-color: black !important;
             }
-            .contact__div:hover{
+
+            .contact__div:hover {
                 background-color: rgb(119, 116, 121);
             }
 
@@ -55,7 +58,7 @@
     }
 }
 
-.Authentication{
+.Authentication {
     display: flex;
     gap: 5px;
     button{
@@ -79,23 +82,25 @@
         background-color: rgb(33, 31, 36);
     }
 }
-.LanguageSelector{
+
+.language-selector {
     position: relative;
     cursor: pointer;
-    .LanguageSelector__container{
+    .language-selector-container {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 3px;
     }
 
-    .Main-LanguageSelector-list{
+    .main-language-selector-list {
         display:none;
         position: absolute;
         top: 100%;
         right: 10px;
         z-index: 2000;
-        .LanguageSelector__list{
+
+        .language-selector-list {
             background-color: rgb(232, 229, 229);
             display: flex;
             align-items: center;
@@ -105,10 +110,12 @@
             border-radius:9px;    
             gap: 5px;
         }
-        .active{
+
+        .active {
             background-color: rgb(194, 193, 193);
         }
-        .Language__container{
+
+        .language-container {
             color: black;
             display: flex;
             align-items: center;
@@ -123,42 +130,41 @@
 
 }
         }
-        .Language__container:hover{
+        .language-container:hover {
             background-color: rgb(194, 193, 193);
         }
     }
 }
 
-.LanguageSelector:hover{
-    .Main-LanguageSelector-list{
+.language-selector:hover{
+    .main-language-selector-list {
         display:block;
     }
 }
 
 
 /*---------------------- MOBILE VERSION----------------------*/
-@media screen and (max-width: 768px){
-    .HeaderSection{
+@media screen and (max-width: 768px) {
+    .header-section{
         display: none;
     }
 }
 
 
 /* ----------- TABLET DEVICES----------- */
-@media only screen and (max-width: 768px ) and (max-width:1023px){
-    .HeaderSection{
+@media only screen and (max-width: 768px ) and (max-width:1023px) {
+    .header-section{
         display: none;
     }
 }
 
 /* ----------- LAPTOP DEVICES----------- */
-@media only screen and (max-width: 1024px ) and (max-width:1439px){
-    .HeaderSection{
+@media only screen and (max-width: 1024px ) and (max-width:1439px) {
+    .header-section{
         display: none;
     }
 }
 
 /* ----------- DESCKTOP DEVICES----------- */
-@media only screen and(max-width: 1440px ){
-
+@media only screen and(max-width: 1440px ) {
 }

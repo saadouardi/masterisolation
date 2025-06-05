@@ -6,25 +6,25 @@ import './Sidebar.scss';
 
 export const Sidebar = () => {
 
-    const [Sidebar,setSidebar] = useState(true);
+    const [sidebar, setSidebar] = useState(true);
     const handleSidebar = () =>{
-        setSidebar(!Sidebar);
+        setSidebar(!sidebar);
     }
     return (
         <>
-            { Sidebar && 
-                <div className='Main-Sidebar'>
-                    <div className='Sidebar' id='Sidebar'>
-                        <div className='Company__container'>
+            {sidebar && 
+                <div className='main-sidebar'>
+                    <div className='sidebar-content'>
+                        <div className='company-container'>
                             <Link href="/">
-                                <div className="Company">
+                                <div className="company-content">
                                     <img src={logo} alt=""/>
                                     <span>MASTER ISOLATION</span>
                                 </div>
                             </Link>
                         </div>
                         <hr/>
-                        <div className='Sidebar__Link'>
+                        <div className='sidebar-link'>
                             <Link to='/' className='active'>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM13 19H18V9.15745L12 3.7029L6 9.15745V19H11V13H13V19Z"></path></svg>
                                 <span>Home</span>
@@ -58,14 +58,14 @@ export const Sidebar = () => {
                                 <span>Cart</span>
                             </Link>
                         </div>
-                        <div className='UserProfile'>
-                            <div className='Profile'>
+                        <div className='user-container'>
+                            <div className='user-profile'>
                                 <img src={User} alt="" />
                                 <span>Saad Ouardi</span>
                                 <svg className='row-down' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 16L6 10H18L12 16Z"></path></svg>
                                 <svg className='row-up' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9999 10.8284L7.0502 15.7782L5.63599 14.364L11.9999 8L18.3639 14.364L16.9497 15.7782L11.9999 10.8284Z"></path></svg>
-                                <div className='UserMenu'>
-                                    <div className='UserMenu__dropdown'>
+                                <div className='user-dropdown'>
+                                    <div className='user-dropdown-content'>
                                         <Link to='/profile'>Profile</Link>
                                         <Link to='/profile'>Cart</Link>
                                         <Link to='/profile'>Wishlist</Link>
@@ -78,7 +78,7 @@ export const Sidebar = () => {
                         </div>
                     </div>
                     <div onClick={handleSidebar}>
-                        <button className='Close-Btn'>X</button>
+                        <button className='close-btn'>X</button>
                     </div>
                 </div>
             }

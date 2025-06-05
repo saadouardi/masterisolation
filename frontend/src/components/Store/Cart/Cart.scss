@@ -1,7 +1,7 @@
-.MainCart{
+.main-cart {
     width: 100%;
     height: 100%;
-    background-color: rgba(224, 224, 224, 0.508);
+    background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     top: 0;
     right: 0;
@@ -10,117 +10,121 @@
     align-items: start;
     justify-content: end;
 
-    hr{
+    hr {
         background-color: black;
     }
 
-    .Cart{
+    .cart-content {
         width: 400px;
         height: 100%;
-        background-color: rgb(247, 247, 247);
+        background-color: rgb(0, 0, 150);
         display: flex;
         flex-direction:column;
         padding: 10px;
         gap: 8px;
-        .NoItem__container{
+        .no-item-container {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            h1{
+            
+            h1 {
                 text-align: center;
             }
         }
     }
 }
 
-.Products-Cart__list{
+.products-cart-list {
     height: 70%;
 }
-.Cart-Title{
-    .Title__container{
+.cart-title {
+    .title-container {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-
-
 }
 
-
-.Product-Cart{
+.product-cart-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
-
-
 }
-.Product-image-name__container{
+
+.product-image-name-container {
     display: flex;
     gap: 8px;
 }
 
 
-.Value-Info__container{
+.value-info-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .Delete__container{
-        svg{
+    .delete-container {
+        svg {
             color:red;
         }
     }
 }
-.Product-Value__container{
+
+.product-value-container {
     display: flex;
+
+    button,
+    input{
+        border: .4px solid rgb(137, 137, 137);
+        background-color: rgb(233, 232, 232);
+        color: black;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+    }
+
+    input{
+        width: 60px;
+    }
 }
 
-.Input-Value,.ValueX{
+.input-value,
+.value-x{
     font-size: 20px;
 }
-.Input-Value, .Store-Currency, .Product-Price{
+
+.input-value,
+.store-currency,
+.product-price {
     color: rgb(0, 162, 255);
     
 }
 
-.Product-Value__container button,
-.Product-Value__container input{
-    border: .4px solid rgb(137, 137, 137);
-    background-color: rgb(233, 232, 232);
-    color: black;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 25px;
-}
-
-.Product-Value__container input{
-    width: 60px;
-}
-
-.MinusBtn{
+.minus-btn {
     border-radius: 9px 0 0 9px;
 }
-.PlusBtn{
+
+.plus-btn {
     border-radius: 0 9px 9px 0;
 }
 
-.Sub-Total__container{
+.sub-total-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.Cart-Button__Container{
+.cart-button-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
-}
-.Cart-Button__Container button{
-    background-color: rgb(1, 164, 214);
-    width: 350px;
-    height: 60px;
+
+    button {
+        background-color: rgb(1, 164, 214);
+        width: 350px;
+        height: 60px;
+    }
 }
