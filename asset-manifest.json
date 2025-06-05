@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/masterisolation/static/css/main.6886c853.css",
-    "main.js": "/masterisolation/static/js/main.703ce157.js",
+    "main.css": "/masterisolation/static/css/main.523dfad6.css",
+    "main.js": "/masterisolation/static/js/main.ce420538.js",
     "static/js/453.d855a71b.chunk.js": "/masterisolation/static/js/453.d855a71b.chunk.js",
     "static/media/slider2.png": "/masterisolation/static/media/slider2.2b508918abdf61e919a7.png",
     "static/media/logo-sbg.png": "/masterisolation/static/media/logo-sbg.47a186985deb96518294.png",
@@ -62,12 +62,12 @@
     "static/media/product-17.webp": "/masterisolation/static/media/product-17.c7745bcf4cd9d764661e.webp",
     "static/media/product-18.webp": "/masterisolation/static/media/product-18.f52aac363532088823bf.webp",
     "index.html": "/masterisolation/index.html",
-    "main.6886c853.css.map": "/masterisolation/static/css/main.6886c853.css.map",
-    "main.703ce157.js.map": "/masterisolation/static/js/main.703ce157.js.map",
+    "main.523dfad6.css.map": "/masterisolation/static/css/main.523dfad6.css.map",
+    "main.ce420538.js.map": "/masterisolation/static/js/main.ce420538.js.map",
     "453.d855a71b.chunk.js.map": "/masterisolation/static/js/453.d855a71b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6886c853.css",
-    "static/js/main.703ce157.js"
+    "static/css/main.523dfad6.css",
+    "static/js/main.ce420538.js"
   ]
 }
