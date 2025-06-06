@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title } from '../../components/Common/Title/Title';
+import { Title } from '../../components/Common/Title';
 import Support1 from '../../assets/images/team/Hassan-Ouardi.webp';
 import Support2 from '../../assets/images/team/Jamal-Jalouti.webp';
 import Support3 from '../../assets/images/team/Saad-Ouardi.jpg';
