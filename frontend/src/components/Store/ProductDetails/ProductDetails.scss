@@ -287,10 +287,10 @@
         
         .left-side {
             background-color: rgb(227, 222, 222);
-            height: 580px;
             display: flex;
             align-items: start;
             justify-content: center;
+            flex-wrap: wrap-reverse;
             gap: 8px;
         
             img {
@@ -301,7 +301,7 @@
                 height: 450px;
             }
             .main-product-image-container {
-                width: 80%;
+                width: 75%;
                 border-radius: 9px;
                 display: flex;
                 align-items: center;
