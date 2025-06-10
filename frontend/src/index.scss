@@ -236,12 +236,24 @@ button.close:hover {
 .flex-container {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 8px;
 }
-.space-between__container {
+
+.flex-space-between {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.list-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 15px;
 }
 
 .section__description {

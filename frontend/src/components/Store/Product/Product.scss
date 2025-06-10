@@ -1,4 +1,4 @@
-.LazyLoading {
+.lazy-loading {
     background-color: #9b9b9b;
     height: 300px;
     width: 200px;
@@ -8,7 +8,7 @@
     overflow: hidden;
 }
 
-.LazyLoading::after {
+.lazy-loading::after {
     content: '';
     height: 100%;
     width: 150%;
@@ -32,7 +32,7 @@
     }
 }
 
-.Product{
+.product-card {
     width: 200px;
     height: fit-content;
     background-color: #e4f2ff;
@@ -46,84 +46,85 @@
     transition: all 0.3s linear;
     padding-bottom: 10px;
 
-    .Product-Image__container{
+    .product-image {
         height: 70%;
         width: 100%;
-        img{
+
+        img {
             width: 100%;
             height: 100%;
             border-radius: 9px 9px 0 0;
         }
-        
     }
 
-    .Product-Info__container{
+    .product-Info-container {
         width: 100%;
         height: 30%;
     
-        div{
+        div {
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        h1.Product-Name{
+        h1.product-name {
             font-size: 24px;
             text-align: start;
         }
 
-        .Product-Price__container{
+        .product-price-container {
             height: 60px;
             display: flex;
             gap: 10px;
 
-            .Discounted-Pirce__container{
-                h1,span{
+            .discounted-pirce-container { 
+                h1, span {
                     color: orange;
                 }
             }
-            .Regular-Price__container{
-                h1,span{
+            
+            .regular-price-container {
+                h1, span {
                     color: red;
                 }
             }
             
-            .Product-Price,.Store-Currency{
+            .product-price, .store-currency {
                 font-size: 25px;
             }
         }
 
-        .Main-Icon__container{
+        .main-icon-container {
             height: 60px;
             display: none;
-        }
-    }
 
+            .icon-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
 
-    
-    .Icon__container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-        button{
-            background-color: rgb(48, 141, 234);
-            padding: 8px;
-            transition: all 0.3s ease;
-        }
-        button:hover{
-            background-color: black;
+                button {
+                    background-color: rgb(48, 141, 234);
+                    padding: 8px;
+                    transition: all 0.3s ease;
+                }
+
+                button:hover {
+                    background-color: black;
+                }
+            }
         }
     }
 }
 
-.Product:hover{
+.product-card:hover{
     background-color: rgb(162, 211, 254);
     box-shadow: 5px 5px 20px rgb(16, 16, 16);
-    .Product-Price__container{
+    .product-price-container{
         display: none;
     }
-    .Main-Icon__container{
+    .main-icon-container{
         display: block;
     }
 }

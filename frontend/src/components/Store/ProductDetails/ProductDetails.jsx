@@ -25,29 +25,33 @@ export const ProductDetails = () => {
     document.getElementById("regularPrice").textContent =
       productRegularPrice * Quantity;
   };
+
   const handleGeneralInfo = () => {
     SetGenInfo(true);
     SetProductDetails(false);
     SetReviews(false);
   };
+
   const handleProductDetails = () => {
     SetProductDetails(true);
     SetGenInfo(false);
     SetReviews(false);
   };
+
   const handleReviews = () => {
     SetReviews(true);
     SetGenInfo(false);
     SetProductDetails(false);
   };
+
   return (
     <>
-      <div className="ProductDetails">
-        <div className="Product-Name-Options__container">
-          <div className="Product-Name__container">
+      <div className="product-details">
+        <div className="product-name-options-container">
+          <div className="product-name-container">
             <h1>{productName}</h1>
           </div>
-          <div className="Product-Options__container">
+          <div className="product-options-container">
             <button onClick={handleGeneralInfo} className="active">
               General info
             </button>
@@ -58,12 +62,12 @@ export const ProductDetails = () => {
           </div>
           <hr />
         </div>
-        <div className="Main-Product_display-info__container">
-          <div className="Product-Images left-side">
-            <div className="Main-Product-Image__container">
+        <div className="main-product-display-info-container">
+          <div className="product-images left-side">
+            <div className="main-product-image-container">
               <img src={productImg} alt="" />
             </div>
-            <div className="Secondary-Product-Image__conianer">
+            <div className="secondary-product-image-container">
               <img src={productImg} alt="" />
               <img src={productImg} alt="" />
               <img src={productImg} alt="" />
@@ -74,7 +78,7 @@ export const ProductDetails = () => {
           <div className="Product-Info right-side">
             {GenInfo && (
               <div className="GenInfo">
-                <div className="space-between__container">
+                <div className="flex-space-between">
                   <div className="Product-Price__container">
                     <span className="Product__Discounted-Price">
                       <span className="Quantity" id="qunatity-price">
@@ -181,7 +185,7 @@ export const ProductDetails = () => {
                     />
                   </div>
                 </div>
-                <div className="space-between__container Product-Quantity-Btns__container">
+                <div className="flex-space-between Product-Quantity-Btns__container">
                   <div className="Product__Btns">
                     <button title="Buy now" className="ButNow__btn">
                       BUY NOW
@@ -253,15 +257,15 @@ export const ProductDetails = () => {
                     </div>
                   </div>
                 </div>
-                <div className="Payment-Options__container">
-                  <div title="Visa" className="Payment-Option__container">
-                    <img src={Visa} alt="" />
+                <div className="payment-options-container">
+                  <div title="Visa">
+                    <img src={Visa} alt="Visa" />
                   </div>
-                  <div title="Mastercard" className="Payment-Option__container">
-                    <img src={MasterCard} alt="" />
+                  <div title="Mastercard">
+                    <img src={MasterCard} alt="Mastercard" />
                   </div>
-                  <div title="PayPal" className="Payment-Option__container">
-                    <img src={PayPal} alt="" />
+                  <div title="PayPal">
+                    <img src={PayPal} alt="Paypal" />
                   </div>
                 </div>
               </div>
