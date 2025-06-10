@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.7fa3b297.css",
-    "main.js": "./static/js/main.5569b3c5.js",
+    "main.css": "./static/css/main.1b080e3c.css",
+    "main.js": "./static/js/main.fe1f4fc7.js",
     "static/js/453.d855a71b.chunk.js": "./static/js/453.d855a71b.chunk.js",
     "static/media/slider2.png": "./static/media/slider2.2b508918abdf61e919a7.png",
     "static/media/logo-sbg.png": "./static/media/logo-sbg.47a186985deb96518294.png",
@@ -53,21 +53,19 @@
     "static/media/product-3.webp": "./static/media/product-3.29cff3b870257364ab35.webp",
     "static/media/product-14.webp": "./static/media/product-14.04cdf1020ec6e5886e1a.webp",
     "static/media/product-16.webp": "./static/media/product-16.91f9638ee4aeda253872.webp",
-    "static/media/app-store.svg": "./static/media/app-store.031738f41c8701a9a067ad909f00f6c9.svg",
     "static/media/product-21.webp": "./static/media/product-21.e4ae23d91ed055e523df.webp",
     "static/media/product-7.webp": "./static/media/product-7.be32312fb59345a15b0a.webp",
-    "static/media/google-play.svg": "./static/media/google-play.9af351487df1f6ba5ea7a4992342cca2.svg",
     "static/media/product-2.webp": "./static/media/product-2.a6894f54d1809eaa4453.webp",
     "static/media/product-19.webp": "./static/media/product-19.f02b6e34b11cf22094b3.webp",
     "static/media/product-17.webp": "./static/media/product-17.c7745bcf4cd9d764661e.webp",
     "static/media/product-18.webp": "./static/media/product-18.f52aac363532088823bf.webp",
     "index.html": "./index.html",
-    "main.7fa3b297.css.map": "./static/css/main.7fa3b297.css.map",
-    "main.5569b3c5.js.map": "./static/js/main.5569b3c5.js.map",
+    "main.1b080e3c.css.map": "./static/css/main.1b080e3c.css.map",
+    "main.fe1f4fc7.js.map": "./static/js/main.fe1f4fc7.js.map",
     "453.d855a71b.chunk.js.map": "./static/js/453.d855a71b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7fa3b297.css",
-    "static/js/main.5569b3c5.js"
+    "static/css/main.1b080e3c.css",
+    "static/js/main.fe1f4fc7.js"
   ]
 }
