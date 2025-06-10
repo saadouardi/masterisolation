@@ -177,7 +177,7 @@
                 }
             }
         
-            .Product-Quantity-Btns__container {
+            .product-quantity-btns-container {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -195,11 +195,15 @@
                     border: 1px solid grey;
                 }
         
-                .Product__Btns {
+                .product-buttons {
+                    width: 100%;
                     display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
                     gap: 8px;
-                    button{
-                        width: 180px;
+                    
+                    button {
+                        width: 100%;
                     }
         
                     .AddToCart__btn {
@@ -285,27 +289,29 @@
             background-color: rgb(227, 222, 222);
             height: 580px;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: start;
+            align-items: start;
+            justify-content: center;
             gap: 8px;
         
             img {
                 cursor: zoom-in;
             }
 
+            .main-product-image-container, .secondary-product-image-container {
+                height: 450px;
+            }
             .main-product-image-container {
-                background-color: transparent;
-                width: 90%;
+                width: 80%;
                 border-radius: 9px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                flex-wrap: wrap;
                 overflow: hidden;
 
                 img {
+                    height: 100%;
                     width: 100%;
-                    height: 340px;
                     transition: all 0.3s linear;
                 }
 
@@ -315,10 +321,13 @@
             }
         
             .secondary-product-image-container {
-                width: 90%;
+                width: 20%;
                 display: flex;
+                flex-direction: column;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: start;
+                flex-wrap: wrap;
+                gap: 4px;
         
                 img {
                     height: 95px;
@@ -329,7 +338,7 @@
                     cursor: pointer;
 
                     &:hover{
-                        transform: scale(1.1);
+                        transform: scale(0.9);
                     }
                 }
             }

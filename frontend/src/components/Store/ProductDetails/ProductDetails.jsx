@@ -64,14 +64,13 @@ export const ProductDetails = () => {
         </div>
         <div className="main-product-display-info-container">
           <div className="product-images left-side">
-            <div className="main-product-image-container">
-              <img src={productImg} alt="" />
-            </div>
             <div className="secondary-product-image-container">
               <img src={productImg} alt="" />
               <img src={productImg} alt="" />
               <img src={productImg} alt="" />
               <img src={productImg} alt="" />
+            </div>
+            <div className="main-product-image-container">
               <img src={productImg} alt="" />
             </div>
           </div>
@@ -185,8 +184,8 @@ export const ProductDetails = () => {
                     />
                   </div>
                 </div>
-                <div className="flex-space-between Product-Quantity-Btns__container">
-                  <div className="Product__Btns">
+                <div className="product-quantity-btns-container">
+                  <div className="product-buttons">
                     <button title="Buy now" className="ButNow__btn">
                       BUY NOW
                     </button>
