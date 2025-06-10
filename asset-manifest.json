@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.19545552.css",
-    "main.js": "./static/js/main.3520aa84.js",
+    "main.css": "./static/css/main.7fa3b297.css",
+    "main.js": "./static/js/main.5569b3c5.js",
     "static/js/453.d855a71b.chunk.js": "./static/js/453.d855a71b.chunk.js",
     "static/media/slider2.png": "./static/media/slider2.2b508918abdf61e919a7.png",
     "static/media/logo-sbg.png": "./static/media/logo-sbg.47a186985deb96518294.png",
@@ -62,12 +62,12 @@
     "static/media/product-17.webp": "./static/media/product-17.c7745bcf4cd9d764661e.webp",
     "static/media/product-18.webp": "./static/media/product-18.f52aac363532088823bf.webp",
     "index.html": "./index.html",
-    "main.19545552.css.map": "./static/css/main.19545552.css.map",
-    "main.3520aa84.js.map": "./static/js/main.3520aa84.js.map",
+    "main.7fa3b297.css.map": "./static/css/main.7fa3b297.css.map",
+    "main.5569b3c5.js.map": "./static/js/main.5569b3c5.js.map",
     "453.d855a71b.chunk.js.map": "./static/js/453.d855a71b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.19545552.css",
-    "static/js/main.3520aa84.js"
+    "static/css/main.7fa3b297.css",
+    "static/js/main.5569b3c5.js"
   ]
 }
